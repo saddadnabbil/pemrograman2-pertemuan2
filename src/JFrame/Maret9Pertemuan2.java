@@ -97,6 +97,11 @@ public class Maret9Pertemuan2 extends javax.swing.JFrame {
         });
 
         hapusButton.setText("Hapus");
+        hapusButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hapusButtonActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("Jenis Kelamin");
 
@@ -404,6 +409,21 @@ public class Maret9Pertemuan2 extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void hapusButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusButtonActionPerformed
+        // TODO add your handling code here:
+        namaObj.setText("");
+        nipObj.setText("");
+        jenisKelamin.clearSelection(); 
+        bagianObj.setSelectedIndex(0);
+        gajiPokokObj.setText("");
+        jmlAnakObj.setText("");
+        tjnAnakObj.setText("");
+        tjnIstriObj.setText("");
+        tjnJabatanObj.setText("");
+        totalTjnObj.setText("");
+        gajiBersihObj.setText("");
+    }//GEN-LAST:event_hapusButtonActionPerformed
 
     /**
      * @param args the command line arguments
